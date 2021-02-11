@@ -19,3 +19,27 @@ input[name="conuntry-name"] {
   display: block;
   margin: 50px auto;
 }
+
+div img {
+  margin-left: 20px;
+}
+
+.country-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-name {
+  text-align: center;
+}
+
+.suggestion-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.suggestion-list ul {
+  padding: 0;
+}

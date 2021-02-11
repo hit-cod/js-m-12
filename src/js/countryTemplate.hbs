@@ -1,13 +1,22 @@
 <article>
-    <h2>{{nameOfCountry}}</h2>
-    <p>Capital: {{capital}}</p>
-    <p>Population: {{population}}</p>
-    <p>Languages:</p>
-    <ul>
-        {{#each languages}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    <p>Flag:</p>
-    <img src="{{flagLink}}" alt="Country flag" width="300" height="300">
+    <h2 class="country-name">{{nameOfCountry}}</h2>
+
+    <div class="country-info">
+
+        <div>
+            <p><b>Capital:</b> {{capital}}</p>
+            <p><b>Population:</b> {{population}}</p>
+            <p><b>Languages:</b></p>
+            <ul>
+                {{#each languages}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div>
+            <img src="{{flagLink}}" alt="Country flag" width="200" height="200">
+        </div>
+
+    </div>
 </article>
